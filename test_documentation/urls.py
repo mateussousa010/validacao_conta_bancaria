@@ -19,7 +19,7 @@ from conta_bancaria.views import cadastroBancoView, contaBancariaView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastro/conta-bancaria',
+    path('',
          cadastroBancoView.as_view(), name='cadastro_banco'),
     path('conta-bancaria/<int:pk>/',
          contaBancariaView.as_view(), name='conta_bancaria')
